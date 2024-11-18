@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+     background-color: #fdfeff;
+     overflow-x: hidden;
+  }
+}
+
+@layer components{
+  .input-box{
+    @apply w-full text-sm bg-transparent px-5 py-3 mb-4 outline-none border-[1.5px]
+  }
+  .btn-primary{
+    @apply w-full text-sm text-white bg-primary hover:bg-blue-600 p-2 my-1 rounded 
+  }
+  .icon-btn{
+    @apply text-xl text-slate-300 cursor-pointer hover:text-primary
+  }
+  .input-label{
+    @apply text-xs text-slate-400;
+  }
+}
